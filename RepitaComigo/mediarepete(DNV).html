@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- chega de media ne prof? nao aguento mais o msm nome slc KAKAKAKAKAKKAAK -->
+    <script>
+      var somaNotas = 0;
+      var contador = 1;
+
+      while (contador <= 6) {
+        let notaTexto = parseFloat(
+          prompt("Digite a nota " + contador + " (0 a 10):")
+        );
+        if (notaTexto >= 0 && notaTexto <= 10) {
+          somaNotas += notaTexto;
+          contador++;
+        } else {
+          alert("Nota inválida! Digite um valor entre 0 e 10.");
+        }
+      }
+
+      let media = somaNotas / 6;
+      document.write("Média final: " + media.toFixed(2));
+    </script>
+  </body>
+</html>
